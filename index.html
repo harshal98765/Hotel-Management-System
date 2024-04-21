@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hotel booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        
+        <a href="#" id="logo"><img src="Gold_Exclusive_Royal_Luxury_Hotel_Logo-removebg-preview.png" alt=""></a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Menu">Menu</a>
+            <a href="#Review">Customer Reviews</a>
+            <a href="#Team">Our Team</a>
+            <!-- <a href="orders.html" class="fas fa-shopping-cart" id="mycart"></a> -->
+        </nav>
+        <div class="icons">
+            
+            <div class="fas fa-user" id="myuser"></div>
+            <div class="fas fa-search" id="serach-bar"></div>
+            <a href="orders.html" class="fas fa-shopping-cart" id="mycart"></a>
+        </div>
+
+        <div class="search-box">
+            
+            <input type="search" placeholder="search here">
+        </div>
+        
+    </header>
+<!-- background image -->
+
+    <div class="main-background">
+        <div class="main-text">
+            <h2>Welcome to</h2>
+        <h1>Hotel  <span>  Royal Inn</span></h1>
+        <p>Welcome to Hotel Royal Inn,where luxury knows no bounds,</p>
+        <p>and your comfort is our top priority.Indulge in world-class</p>
+        <p> amenities,immerse yourself in impeccable service,and create</p>
+        <p> unforgettable memories with us.</p>
+        </div>
+        </div>
+        
+    </div>
+
+    <button class="center-button" id="open-pdf-btn">Menu Card</button>
+    
+    
+    
+    <!-- background image ended -->
+
+<!--About-->
+
+<div class="about" id="About">
+    <div class="about_main">
+
+        <div class="image">
+            <img src="wp3138487.webp">
+        </div>
+
+        <div class="about_text">
+            <h1><span>About</span>Us</h1>
+            <h3>Why Choose us?</h3>
+            <p>
+                Welcome to Hotel Royal INN, where family is at the heart of everything we do. As a family-owned hotel nestled in the heart of Pune, we offer a warm and inviting atmosphere for families to relax, reconnect, and create lasting memories. Our comfortable accommodations, kid-friendly features, and convenient location make us the perfect choice for your next family getaway. Join our family at Roayl INN and experience the joy of togetherness in a home away from home.
+            </p>
+        </div>
+        <a href="#home" class="about_btn">Back to Top</a>
+    </div>
+
+</div>
+
+<!-- Menu card glimpse -->
+
+<div class="menu" id="Menu">
+    <h1>Glimpse of<span>Our Menu</span></h1>
+
+    <div class="menu_box">
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="image/5d662c8ea84656a7661be92a_1566977166741.jpg">
+            </div>
+
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <!-- <div class="menu_info">
+                <h2>Pune Special Thali</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
+                </p>
+                <h3>Rs.400/-</h3>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="add_to_cart_section">
+                    <button class="add_to_cart_btn">Add to Cart</button>
+                    <input type="number" class="quantity_input" value="1" min="1">
+                </div>
+            </div> -->
+
+            <div class="menu_info">
+                <h2>Pune Special Thali</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
+                </p>
+                <h3>Rs.400/-</h3>
+                <div class="menu_icon">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="add_to_cart_section">
+                    <button class="add_to_cart_btn" onclick="addToCart('Pune Special Thali', 400, 'pune_quantity')">Add to Cart</button>
+                    <input type="number" class="quantity_input" id = "pune_quantity"value="1" min="1">
+                </div>
+            </div>
+        </div>
+        
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="image/wp3376127.webp">
+            </div>
+
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+                <h2>Pizza</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
+                </p>
+                <h3>Rs.500/-</h3>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="add_to_cart_section">
+                    <button class="add_to_cart_btn" onclick="addToCart('Pizza', 500, 'pizza_quantity')">Add to Cart</button>
+                    <input type="number" class="quantity_input"  id="pizza_quantity" value="1" min="1">
+                </div>
+            </div>
+        </div>
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="image/wp3495556.jpg">
+            </div>
+
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+                <h2>Samosa</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
+                </p>
+                <h3>Rs.100/-</h3>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="add_to_cart_section">
+                    <button class="add_to_cart_btn" onclick="addToCart('Samosa', 100, 'samosa_quantity')" >Add to Cart</button>
+                    <input type="number" class="quantity_input" id="samosa_quantity" value="1" min="1">
+                </div>
+            </div>
+        </div>
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="image/R.jpeg">
+            </div>
+
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+                <h2>Ambras Thali</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
+                </p>
+                <h3>Rs.650/-</h3>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="add_to_cart_section">
+                    <button class="add_to_cart_btn" onclick="addToCart('Ambras Thali', 650, 'ambras_quantity')">Add to Cart</button>
+                    <input type="number" class="quantity_input" id = "ambras_quantity" value="1" min="1">
+                </div>
+            </div>
+        </div>
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="image/OIP.jpeg">
+            </div>
+
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+                <h2>Punjabi Thali</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
+                </p>
+                <h3>Rs.800/-</h3>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="add_to_cart_section">
+                    <button class="add_to_cart_btn" onclick="addToCart('Punjabi Thali', 800, 'punjabi_quantity')">Add to Cart</button>
+                    <input type="number" class="quantity_input" id = "punjabi_quantity" value="1" min="1">
+                </div>
+            </div>
+        </div>
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="image/R.jpeg">
+            </div>
+
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+                <h2>Baramati Special Thali</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
+                </p>
+                <h3>Rs.750/-</h3>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="add_to_cart_section">
+                    <button class="add_to_cart_btn" onclick="addToCart('Baramati Special Thali', 750, 'Baramati_quantity')">Add to Cart</button>
+                    <input type="number" class="quantity_input" id = "Baramati_quantity"value="1" min="1">
+                </div>
+            </div>
+        </div>
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="image/wp7709844.jpg">
+            </div>
+
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+                <h2>Italian Paneer</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
+                </p>
+                <h3>Rs.500/-</h3>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                
+                <div class="add_to_cart_section">
+                    <button class="add_to_cart_btn" onclick="addToCart('Italian Paneer', 500, 'Italian_quantity')">Add to Cart</button>
+                    <input type="number" class="quantity_input" id = "Italian_quantity" value="1" min="1">
+                </div>
+            </div>
+        </div>
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="image/OIP (1).jpeg">
+            </div>
+
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+                <h2>Chicken fry</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
+                </p>
+                <h3>Rs.1000/-</h3>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="add_to_cart_section">
+                    <button class="add_to_cart_btn" onclick="addToCart('Chicken Fry', 1000, 'Chicken_fry_quantity')">Add to Cart</button>
+                    <input type="number" class="quantity_input" id = "Chicken_fry_quantity"value="1" min="1">
+                </div>
+            </div>
+        </div>
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="image/767054.jpg">
+            </div>
+
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+                <h2>French Fries</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
+                </p>
+                <h3>Rs.200/-</h3>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="add_to_cart_section">
+                    <button class="add_to_cart_btn" onclick="addToCart('French Fries', 200, 'French_quantity')" >Add to Cart</button>
+                    <input type="number" class="quantity_input" id = "French_quantity" value="1" min="1">
+                </div>
+            </div>
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="image/1306125.jpg">
+            </div>
+
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+                <h2>Burger Combo</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
+                </p>
+                <h3>Rs.350/-</h3>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="add_to_cart_section">
+                    <button class="add_to_cart_btn" onclick="addToCart('Burger Combo', 200, 'Burger_quantity')">Add to Cart</button>
+                    <input type="number" class="quantity_input" id = "Burger_quantity" value="1" min="1">
+                </div>
+            </div>
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="image/R (1).jpeg">
+            </div>
+
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+                <h2>Chicken Platter</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
+                </p>
+                <h3>Rs.500/-</h3>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+
+                 <div class="add_to_cart_section">
+            <button class="add_to_cart_btn" onclick="addToCart('Chicken Platter', 500, 'Chicken_platter_quantity')">Add to Cart</button>
+            <input type="number" class="quantity_input" id = "Chicken_platter_quantity" value="1" min="1">
+        </div>
+    </div>
+</div>
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="image/wp7845906.jpg">
+            </div>
+
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+                <h2>Paper Dosa</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
+                </p>
+                <h3>Rs.100/-</h3>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="add_to_cart_section">
+                    <button class="add_to_cart_btn" onclick="addToCart('Paper Dosa', 100, 'dosa_quantity')">Add to Cart</button>
+                    <input type="number" class="quantity_input" id="dosa_quantity" value="1" min="1">
+                </div>
+            </div>
+        </div>
+
+        <!-- <a href="#home" class="menu_btn">Back to Top</a> -->
+</div>
+
+
+<!--Review-->
+
+<div class="review" id="Review">
+    <h1>Customer<span>Review</span></h1>
+
+    <div class="review_box">
+        <div class="review_card">
+
+            <div class="review_profile">
+                <img src="image/review_1.png">
+            </div>
+
+            <div class="review_text">
+                <h2 class="name">Neel Madam</h2>
+
+                <div class="review_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+
+                <div class="review_social">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+
+                <p>
+                    Exceptional service and breathtaking views!🫡 From the moment we arrived, the staff at this hotel went above and beyond to make our stay unforgettable. The rooms were elegant and comfortable, and the panoramic vistas of the city skyline were truly mesmerizing. We especially enjoyed dining at the rooftop restaurant, where the food was as exquisite as the scenery. A truly luxurious experience that we can't wait to repeat!"!
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="review_card">
+
+            <div class="review_profile">
+                <img src="image/review_2.png">
+            </div>
+
+            <div class="review_text">
+                <h2 class="name">Harshal</h2>
+
+                <div class="review_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+
+                <div class="review_social">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+
+                <p>
+                    "A hidden gem in the heart of the city! This boutique hotel exceeded all our expectations. The attention to detail in the decor, coupled with the personalized service, made us feel like valued guests from the moment we stepped through the door. The complimentary breakfast showcased local delicacies, and the cozy lounge area was perfect for unwinding after a day of exploring. We'll definitely be returning!"
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="review_card">
+
+            <div class="review_profile">
+                <img src="image/review_3.png">
+            </div>
+
+            <div class="review_text">
+                <h2 class="name">Shrutika</h2>
+
+                <div class="review_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+
+                <div class="review_social">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+
+                <p>
+                    "Mixed feelings about our stay. While the hotel's amenities were impressive and the location convenient for sightseeing, the overall experience was marred by inconsistent service. While some staff members were attentive and friendly, others seemed disinterested and unresponsive to our needs. The room was comfortable but lacked the luxurious touch advertised. With a bit more attention to customer service, this hotel could truly shine."
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="review_card">
+
+            <div class="review_profile">
+                <img src="image/review_4.png">
+            </div>
+
+            <div class="review_text">
+                <h2 class="name">Shivam</h2>
+
+                <div class="review_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+
+                <div class="review_social">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+
+                <p>
+                    "Absolute luxury! From the opulent lobby to the meticulously designed rooms, this hotel exudes sophistication. Every aspect of our stay was flawless, from the seamless check-in process to the indulgent spa treatments. The hotel's Michelin-starred restaurant surpassed all expectations, offering a culinary journey that delighted the senses. While pricey, the experience was worth every penny for the unparalleled luxury and impeccable service."
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+<!--Team-->
+
+<div class="team" id = "Team">
+    <h1>Our<span>Team</span></h1>
+
+    <div class="team_box">
+        <div class="profile">
+            <img src="image/chef1.png">
+
+            <div class="info">
+                <h2 class="name">Chef Shivam</h2>
+                <!-- <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+
+                <div class="team_icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="profile">
+            <img src="image/chef2.png">
+
+            <div class="info">
+                <h2 class="name">Chef Krishna</h2>
+                <!-- <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+
+                <div class="team_icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="profile">
+            <img src="image/chef3.jpg">
+
+            <div class="info">
+                <h2 class="name">Chef Udayan</h2>
+                <!-- <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+
+                <div class="team_icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="profile">
+            <img src="image/chef4.jpg">
+
+            <div class="info">
+                <h2 class="name">Chef Sahil</h2>
+                <!-- <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+
+                <div class="team_icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!--Footer-->
+
+<footer>
+    <div class="footer_main">
+
+        <div class="footer_tag">
+            <h2>Location</h2>
+            <p>Pune</p>
+            <p>Mumbai</p>
+            <p>Baramati</p>
+            <p>Kolhapur</p>
+            <p>Satara</p>
+        </div>
+
+        <div class="footer_tag">
+            <h2>Quick Link</h2>
+            <p>Home</p>
+            <p>About</p>
+            <p>Menu</p>
+            <p>Gallary</p>
+            <p>Order</p>
+        </div>
+
+        <div class="footer_tag">
+            <h2>Contact</h2>
+            <p>+91 9856856958</p>
+            <p>+91 9523186523</p>
+            <p>Royal123@gmail.com</p>
+            <p>RoyalInn007@gmail.com</p>
+        </div>
+
+        <div class="footer_tag">
+            <h2>Our Service</h2>
+            <p>Fast Delivery</p>
+            <p>Easy Payments</p>
+            <p>24 x 7 Service</p>
+        </div>
+
+        <div class="footer_tag">
+            <h2>Follows</h2>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+
+    </div>
+
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const openPdfBtn = document.getElementById("open-pdf-btn");
+
+    openPdfBtn.addEventListener("click", function() {
+        const pdfFilePath = "Menucard.pdf";
+        window.open(pdfFilePath);
+    });
+});
+</script>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

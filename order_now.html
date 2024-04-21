@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="order" id="Order">
+        <h1><span>Order</span>Now</h1>
+
+        <div class="order_main">
+            <div class="order_image">
+                <img src="image/R.jpeg">
+            </div>
+
+            <form action="save.php" method="post">
+                <div class="input">
+                    <p>Name</p>
+                    <input type="text" name="name" placeholder="Your name">
+                </div>
+
+                <div class="input">
+                    <p>Table Number</p>
+                    <input type="number" name="table_number" placeholder="Table Number">
+                </div>
+
+                <div class="input">
+                    <p>Phone Number</p>
+                    <input type="tel" name="phone_number" placeholder="Your number">
+                </div>
+
+                <div class="input">
+                    <p>Quantity</p>
+                    <input type="number" name="quantity" placeholder="How many orders">
+                </div>
+
+                <div class="input">
+                    <p>Your Order</p>
+                    <input type="text" name="order_item" placeholder="Food name">
+                </div>
+
+                <div class="input">
+                    <p>Address</p>
+                    <input type="text" name="extras" placeholder="Extra Orders">
+                </div>
+
+                <button type="submit" class="order_btn">Submit Order</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Optional: You can add client-side validation or other scripts here
+    </script>
+
+</body>
+</html>

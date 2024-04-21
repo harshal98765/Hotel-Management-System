@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <style>
+        body {
+            background-image: url(wp9506465.jpg);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ffffff62;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            color: #fff;
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        #total {
+            color: #fff;
+            font-weight: bolder;
+            text-align: right;
+            margin-bottom: 10px;
+        }
+
+        #place-order-btn {
+            background-color: #fdd909; /* Green */
+            border: none;
+            color: rgb(0, 0, 0);
+            padding: 11px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Orders</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h2>Your Orders</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody id="order-list">
+                <!-- Orders will be dynamically added here -->
+            </tbody>
+        </table>
+        <div id="total">Total: Rs.0.00</div>
+        <button id="place-order-btn" onclick="placeOrder()">Place Order</button>
+    </div>
+
+    <script>
+        // Retrieve items from local storage
+        var items = JSON.parse(localStorage.getItem("items")) || [];
+        var orderList = document.getElementById("order-list");
+        var totalElement = document.getElementById("total");
+
+        // Function to display orders
+        function displayOrders() {
+            var total = 0;
+            orderList.innerHTML = ""; // Clear previous content
+            items.forEach(function(item) {
+                var row = "<tr>";
+                row += "<td>" + item.name + "</td>";
+                row += "<td>" + item.quantity + "</td>";
+                row += "<td>Rs." + item.price.toFixed(2) + "/-</td>"; // Ensure price is displayed with 2 decimal places
+                row += "</tr>";
+                orderList.innerHTML += row;
+                total += parseFloat(item.price) * parseInt(item.quantity);
+            });
+            totalElement.textContent = "Total: Rs." + total.toFixed(2) + "/-"; // Ensure total is displayed with 2 decimal places
+        }
+
+        // Function to handle placing order and redirect to payment page
+        function placeOrder() {
+            // Redirect to billing and payments page
+            window.location.href = "Billing.html";
+        }
+
+        // Display orders when page loads
+        displayOrders();
+    </script>
+</body>
+</html>
